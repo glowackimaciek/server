@@ -35,7 +35,7 @@ app.use((req, res, next) => {
     res.status(500).send('Wystapił błąd na serwerze')
 });
 
-const PORT = process.env.PORT || 3000; //Ustawia PORT na wartość zapisaną w pliku .env lub 3000
+const PORT = process.env.PORT || 5000; //Ustawia PORT na wartość zapisaną w pliku .env lub 3000
 
 //Start servera
 app.listen(PORT, () => {
