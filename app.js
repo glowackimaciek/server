@@ -9,6 +9,9 @@ const app = express();
 
 //Importo routers
 const index = require('./routers/index');
+const dashboard = require('./routers/dashboard');
+const login = require('./routers/login');
+const register = require('./routers/register');
 
 //Middleware
 app.use(cors());
@@ -17,6 +20,9 @@ app.use(bodyParser.urlencoded({ extended: true}));
 
 //Użycie routers
 app.use('/', index);
+app.use('/dashboard', dashboard);
+app.use('/login', login);
+app.use('/register', register);
 
 
 //Obsługa nieznanych ścieżek 
